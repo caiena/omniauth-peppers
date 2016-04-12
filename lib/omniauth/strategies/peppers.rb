@@ -9,10 +9,15 @@ module OmniAuth
       CLIENT_OPTIONS = {
         site: "#{PROVIDER_URL}/api/v1",
         authorize_url: "#{PROVIDER_URL}/oauth/authorize",
-        token_url: "#{PROVIDER_URL}/oauth/access_token"
+        token_url: "#{PROVIDER_URL}/oauth/token"
       }
 
       option :client_options, CLIENT_OPTIONS
+
+
+      def callback_url
+        full_host + script_name + callback_path
+      end
 
       def request_phase
         super
@@ -43,6 +48,7 @@ module OmniAuth
 
       def raw_info
         access_token.options[:mode] = :query
+
         @raw_info ||= access_token.get('credentials/me').parsed
       end
     end

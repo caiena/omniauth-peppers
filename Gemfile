@@ -4,6 +4,7 @@ source 'http://rubygems.org'
 gemspec
 
 group :development, :test do
+  gem 'byebug'
   gem 'codeclimate-test-reporter'
 
   gem 'guard-rspec', '4.6.4'
