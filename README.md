@@ -2,7 +2,7 @@
 
 This is the official OmniAuth strategy for authenticating to Caiena Peppers. To
 use it, you'll need to sign up for an OAuth2 Application ID and Secret
-on the [Peppers Applications Page](https://peppers.com/platform/applications).
+on the [Peppers Applications Page](http://peppers.caiena.net/platform/applications).
 
 ## Basic Usage
 
