@@ -1,0 +1,43 @@
+# assets
+.sass-cache/
+public/assets
+public/uploads
+public/system
+public/static_files
+uploads/*
+spec/support/uploads/*
+
+# config
+config/application.yml
+config/database.yml
+config/newrelic.yml
+config/redis.yml
+.rubocop.yml
+secret_token.rb
+setup_mail.rb
+
+# database
+db/*.sqlite3
+dump.rdb
+script/db
+*.sql
+*.sqlite*
+
+# log
+*.log
+nohup.out
+
+# rvm & bundle
+/.bundle
+.rvmrc
+
+# tests
+.rspec
+.tork-*
+coverage/
+
+# temp
+tmp/
+
+# system
+.DS_Store
